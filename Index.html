@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Player UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header fade-in">
+    <h2>Your Library</h2>
+    <div>☰</div>
+  </div>
+
+  <!-- SEARCH -->
+  <div class="search fade-in card-hover">
+    <input type="text" placeholder="Search music..." />
+  </div>
+
+  <!-- SONG LIST -->
+  <div class="song-list fade-in">
+    <div class="song card-hover">
+      <div class="song-cover"></div>
+      <div>
+        <strong>Song Title 1</strong><br />
+        <small>Artist 1</small>
+      </div>
+    </div>
+
+    <div class="song card-hover">
+      <div class="song-cover"></div>
+      <div>
+        <strong>Song Title 2</strong><br />
+        <small>Artist 2</small>
+      </div>
+    </div>
+
+    <div class="song card-hover">
+      <div class="song-cover"></div>
+      <div>
+        <strong>Song Title 3</strong><br />
+        <small>Artist 3</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- PLAYER -->
+  <div class="player fade-in card-hover">
+    <div class="cover-big rotate"></div>
+
+    <h3>Song Title</h3>
+    <p class="artist-label">Artist</p>
+
+    <!-- Equalizer Visual -->
+    <div class="equalizer">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="progress">
+      <div class="bar"></div>
+    </div>
+
+    <!-- VOLUME SLIDER -->
+    <input type="range" min="0" max="100" value="60" class="volume-slider" />
+
+    <!-- CONTROLS -->
+    <div class="controls">
+      <div class="small-btn">⏮</div>
+      <div class="btn">▶</div>
+      <div class="small-btn">⏭</div>
+    </div>
+
+    <!-- EXTRA BUTTONS -->
+    <div class="extra-controls">
+      <div class="small-btn">🔁</div>
+      <div class="small-btn">🔀</div>
+    </div>
+  </div>
+
+</body>
+</html>
